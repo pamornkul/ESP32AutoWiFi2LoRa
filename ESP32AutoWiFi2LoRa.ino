@@ -16,9 +16,6 @@
 #define dio0 2 //  d0  interup recieve pin 2 
 /*  ==========end for ESP8266=========*/
 
-//const int csPin = 7;          // LoRa radio chip select
-//const int resetPin = 6;       // LoRa radio reset
-//const int irqPin = 1;         // change for your board; must be a hardware interrupt pin
 #define RELAY_NO    true
 #define NUM_RELAYS  2  // Set number of relays
 
