@@ -50,7 +50,7 @@ const char index_html[] PROGMEM = R"rawliteral(
   </style>
 </head>
 <body>
-  <h2>ESP Web Server AA Control BB</h2>
+  <h2>ESP Web Server BB Control AA</h2>
   %BUTTONPLACEHOLDER%
 <script>function toggleCheckbox(element) {
   var xhr = new XMLHttpRequest();
@@ -146,12 +146,12 @@ void updatepage() {
   LoRa.receive();
 }
 
-String outgoing;              // outgoing message
-byte msgCount = 0;            // count of outgoing messages
-byte localAddress = 0xAA;     // address of this device
-byte destination = 0xBB;      // destination to send to
-long lastSendTime = 0;        // last send time
-int interval = 2000;          // interval between sends
+String outgoing;             
+byte msgCount = 0;           
+byte localAddress = 0xBB;    
+byte destination = 0xAA; 
+long lastSendTime = 0;   
+int interval = 2000;  
 
 void setup() {
  for(int i=1; i<=NUM_RELAYS; i++){
